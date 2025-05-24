@@ -1,0 +1,38 @@
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px;
+  color: #fff;
+  background-color: #4a90e2;
+  /* nice blue */
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.bg-red{
+  background-color: red;
+}
+.bg-green{
+  background-color: green;
+}
+.bg-black{
+  background-color: black;
+}
+
+.btn:hover{
+  border:1px solid #fff;
+}
+.count{
+  width:100px;
+  background-color: grey;
+  padding: 10px;
+  font-size:30px;
+  border-radius:10px;
+  margin:auto;
+  margin-bottom:30px
+}
