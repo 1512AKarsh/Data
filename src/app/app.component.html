@@ -1,40 +1,16 @@
-<!-- <h1>Hello Angular </h1>
-{{title}}
+<h1>Event in Angular</h1>
+<button class="btn" name="login" (click)="handleEvent($event)">Click Me</button>
 <br>
-{{Education}} 
-{{2+9}}
-<h2>x+y ={{x+y}}</h2>
-<h3>{{x==y}}</h3>
-<app-profile></app-profile>
-<h4>{{user1}}</h4>
+<br>
+<div (mouseenter) = "handleEvent($event)" style="background-color: green; width: 100px; height: 100px;"></div>
 
-<h4>{{user2}}</h4>
+<div (mouseleave)="handleEvent($event)" style="background-color: rgb(29, 15, 103); width: 100px; height: 100px;"></div>
 
-<h3>{{user1 ==user2}}</h3>
+<br> 
+<br>
 
-<h2>{{'hello'.toUpperCase()}}</h2>
-<h2>{{user1.toUpperCase()}}</h2>
-<h2>{{user1 }}</h2>
-<h2>{{user2 }}</h2>
-<login></login>
-<app-profile style="background-color: skyblue;"></app-profile>
-<app-signup></app-signup> -->
+<input (input)= "handleInputEvent($event)"
+(focus)= "handleInputEvent($event)" 
+(blur)= "handleInputEvent($event)" 
 
-
-
-<!-- <h1>Function call on Button Click</h1>
-<button (click) = "handleClickEvent()">Click me</button>
-<button (click)=  "sum(6,4)">Sum</button> -->
-
-
-<h1>Counter App</h1>
-<div style="text-align: center">
-  <h2 class="count">{{count}}</h2>
-
-  <div>
-    <button (click)= "handleCounter('minus')" class="btn bg-red">Decrement</button>
-    <button (click)="handleCounter('reset')" class="btn bg-black">Reset</button>
-    <button (click)="handleCounter('plus')" class="btn bg-green">Increment</button>
-
-  </div>
-</div>
+type="text" name="user">
